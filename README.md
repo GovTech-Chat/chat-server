@@ -22,3 +22,4 @@ spring:
 - Start MySQL
 - Import chat-server into IDE
 - Run as spring boot application
+- Or open command prompt and goto the project root directory and run: mvn spring-boot:run
