@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">[GovTech Chat] Signup Successful</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<p>Dear <span th:text="${firstName}"></span>,</p>
+<p>You have successfully signup to GovTech Chat on <span th:text="${#dates.format(requestDate, 'dd MMM yyyy')}"></span></p>
+<p>Please use the following credentials to login to GovTech Chat at http://localhost:8080</p>
+<p>Username: <span th:text="${username}"></span></p>
+<p>Password: <span th:text="${password}"></span></p>
+<p>You are advised to change your password once you have logged in.</p>
+<p>If you did not initiate the signup, please contact GovTech immediately.</p>
+
+<p>
+    Regards, <br />
+    GovTech Admin Team <br/>
+    Tel: +65 1234 5678 <br />
+</p>
+</body>
+
+</html>
